@@ -56,7 +56,7 @@ public class EventController {
         model.addAttribute("event", eventToEdit);
         String title = "Edit Event " + eventToEdit.getName() + " (id = " + eventToEdit.getId() + ")";
         model.addAttribute("title", title);
-        return "/events/edit";
+        return "events/edit";
     }
 
     @PostMapping("edit")
